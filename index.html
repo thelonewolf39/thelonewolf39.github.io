@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional child actor resume and portfolio">
+    <title>Child Actor Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 20px;
+            background-color: #f5f5f5;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .physical-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .stat-item {
+            padding: 10px;
+        }
+
+        .stat-label {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #667eea;
+            border-radius: 3px;
+        }
+
+        .experience-item h3 {
+            color: #333;
+            margin-bottom: 5px;
+            font-size: 1.3em;
+        }
+
+        .role {
+            font-style: italic;
+            color: #666;
+            margin-bottom: 5px;
+        }
+
+        .production-info {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .skill-category ul {
+            list-style-position: inside;
+            padding-left: 10px;
+        }
+
+        .skill-category li {
+            padding: 5px 0;
+        }
+
+        .training-item {
+            margin-bottom: 15px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 3px;
+        }
+
+        .training-item h3 {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .instructor {
+            color: #666;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .container {
+                padding: 10px;
+            }
+
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .physical-stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+
+            header {
+                background: #667eea;
+                color: white;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Alex Johnson</h1>
+            <p class="tagline">Young Performer | Actor | Model</p>
+        </header>
+
+        <div class="contact-info">
+            <p><strong>Contact:</strong> parent@email.com | (555) 123-4567</p>
+            <p><strong>Location:</strong> Los Angeles, CA</p>
+            <p><strong>Representation:</strong> ABC Talent Agency</p>
+        </div>
+
+        <section class="section">
+            <h2>Physical Characteristics</h2>
+            <div class="physical-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Age:</span> 12 years old
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Height:</span> 5'2"
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Weight:</span> 95 lbs
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Hair:</span> Brown
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Eyes:</span> Blue
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Playing Age:</span> 10-14
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Film & Television Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Summer Adventures</h3>
+                <p class="role">Supporting Role - Tommy Miller</p>
+                <p class="production-info">Feature Film | Director: Jane Smith | 2023</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>The Family Next Door</h3>
+                <p class="role">Recurring Guest Star - Jamie</p>
+                <p class="production-info">TV Series | ABC Network | Season 2, Episodes 5-8 | 2023</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>School Days</h3>
+                <p class="role">Co-Star - Student #2</p>
+                <p class="production-info">TV Series | Netflix | 2022</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Local Hero</h3>
+                <p class="role">Lead Role - Chris</p>
+                <p class="production-info">Short Film | Festival Selection | 2022</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Theater Experience</h2>
+            
+            <div class="experience-item">
+                <h3>Annie Jr.</h3>
+                <p class="role">Lead Role - Annie</p>
+                <p class="production-info">Community Theater | Summer 2023</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>The Lion King Jr.</h3>
+                <p class="role">Ensemble/Young Simba Understudy</p>
+                <p class="production-info">Youth Theater Company | Spring 2022</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>A Christmas Carol</h3>
+                <p class="role">Tiny Tim</p>
+                <p class="production-info">Regional Theater | Winter 2021</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Commercial Work</h2>
+            
+            <div class="experience-item">
+                <h3>National Commercial</h3>
+                <p class="role">Principal</p>
+                <p class="production-info">Major Toy Brand | 2023</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Regional Commercial</h3>
+                <p class="role">Principal</p>
+                <p class="production-info">Local Restaurant Chain | 2022</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Training & Education</h2>
+            
+            <div class="training-item">
+                <h3>Scene Study for Young Actors</h3>
+                <p class="instructor">Michael Davis, Acting Coach | 2022-Present</p>
+            </div>
+
+            <div class="training-item">
+                <h3>On-Camera Technique</h3>
+                <p class="instructor">Sarah Williams Studio | 2021-Present</p>
+            </div>
+
+            <div class="training-item">
+                <h3>Improvisation for Kids</h3>
+                <p class="instructor">Youth Comedy Workshop | 2021</p>
+            </div>
+
+            <div class="training-item">
+                <h3>Voice & Speech</h3>
+                <p class="instructor">LA Voice Academy | 2020-Present</p>
+            </div>
+
+            <div class="training-item">
+                <h3>Dance Training</h3>
+                <p class="instructor">Hip-Hop, Jazz, Ballet | City Dance Studio | 2019-Present</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Special Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Performance</h3>
+                    <ul>
+                        <li>Singing (Soprano)</li>
+                        <li>Dancing (Jazz, Hip-Hop, Ballet)</li>
+                        <li>Comedy/Improvisation</li>
+                        <li>Accents (British, Southern)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Athletics</h3>
+                    <ul>
+                        <li>Swimming</li>
+                        <li>Skateboarding</li>
+                        <li>Soccer</li>
+                        <li>Gymnastics (Basic)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Other</h3>
+                    <ul>
+                        <li>Piano (3 years)</li>
+                        <li>Guitar (Beginner)</li>
+                        <li>Comfortable with Animals</li>
+                        <li>Valid Passport</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Alex Johnson | Professional Child Actor Resume</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">For booking inquiries, please contact representation</p>
+        </footer>
+    </div>
+</body>
+</html>
